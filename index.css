@@ -242,8 +242,8 @@ option{
     }
     .box-imagem img{
       transition: transform 0.3 ease;
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       
     }
     
@@ -350,31 +350,31 @@ option{
 
 
 .seta1.esquerda {
-  left: 20px;
+  left: 0;
 }
 
 .seta1.direita {
-right: 20px;
+right: 0;
 }
 .seta2.esquerda {
-  left: 10px;
+  left: 0;
 }
 .seta2.direita {
-right: 10px;
+right: 0;
 }
 
 .seta3.esquerda{
-  left: 10px;
+  left: 0;
 }
 .seta3.direita{
-  right: 10px;
+  right: 0;
 }
 
 .seta4.esquerda{
-  left: 10px;
+  left: 0;
 }
 .seta4.direita{
-  right: 10px;
+  right: 0;
 }
 
 
