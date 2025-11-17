@@ -59,9 +59,7 @@ body{
     overflow: hidden;
 }
 
-.ativo{
-  display: block;
-}
+
 
 .container>div{
     display: flex;
@@ -346,8 +344,6 @@ option{
   position: absolute;
   padding: 5px;
 }
-
-
 
 .seta1.esquerda {
   left: 0;

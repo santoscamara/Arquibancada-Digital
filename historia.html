@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <link rel="stylesheet" href="historia.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquibancada digital</title>
+  
+</head>
+<body>
+
+<header class="cabecalho">
+            <nav class="cabecalho-menu">
+                <a class="cabecalho-menu-item" href="index.html">Início</a>
+                <a class="cabecalho-menu-item" href="produtos.html">Produtos</a>
+                <a class="cabecalho-menu-item" href="historia/HTML/historia.html">Hinos</a>
+                <a class="cabecalho-menu-item" href="">Sobre nós</a>
+            </nav>
+            
+<button onclick="abrirFormulario()" class="btninscrever">Inscreva-se</button>         
+  <!-- Modal do formulário -->
+  <div id="formModal" class="modal">
+    <button onclick="abrirFormulario()">Inscreva-se</button>
+    <div class="modal-content">
+      <span class="close" onclick="fecharFormulario()">&times;</span>
+      
+      <h2>Formulário de Inscrição</h2>
+      <form onsubmit="redirecionar(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" maxlength="50" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" maxlength="50" required>
+
+        <label for="time">Escolha seu time:</label>
+        <select id="time" required>
+          <option value="">Selecione...</option>
+          <option value="flamengo.html/">Flamengo</option>
+          <option value="https://www.fluminense.com.br/">Fluminense</option>
+          <option value="https://www.botafogo.com.br/">Botafogo</option>
+          <option value="https://www.vasco.com.br/">Vasco</option>
+        </select>
+        <br>
+        <button type="submit" class="submit-btn">Enviar Inscrição</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+  <div class="cards-container">
+
+    <div class="card">
+     <a href="fluminense.html" class="img-click">
+      <img src="fluminense.png" alt="Fluminense">
+      </a>
+      <h2>Fluminense</h2>
+      </div>
+
+      <div class="card">
+    <a href="flamengo.html">
+      <img src="flamengo.png" alt="Flamengo">
+    </a>
+    <h2>Flamengo</h2>
+    </div>
+
+    <div class="card">
+    <a href="vasco.html">
+      <img src="vasco.png" alt="Vasco da Gama">
+    </a>
+    <h2>Vasco</h2>
+    </div>
+
+    <div class="card">
+    <a href="botafogo.html">
+      <img src="botafogo.png" alt="Botafogo">
+    </a>
+     <h2>Botafogo</h2>
+    </div>
+
+  </div>
+     <script>
+    // Função para abrir o formulário
+    function abrirFormulario() {
+      document.getElementById('formModal').style.display = 'block';
+    }
+
+    // Função para fechar o formulário
+    function fecharFormulario() {
+      document.getElementById('formModal').style.display = 'none';
+    }
+
+    // Função para redirecionar com base na seleção do time
+    function redirecionar(event) {
+      event.preventDefault(); // Evita o envio do formulário
+      const timeSelecionado = document.getElementById('time').value;
+      if (timeSelecionado) {
+        window.location.href = timeSelecionado; // Redireciona para a URL do time selecionado
+      }
+    }
+
+    // Fecha o modal se o usuário clicar fora dele
+    window.onclick = function(event) {
+      const modal = document.getElementById('formModal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+
+
+  </script>
+
+</body>
+</html>
