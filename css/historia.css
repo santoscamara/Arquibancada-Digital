@@ -1,0 +1,189 @@
+    
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+    background-image: url("torcida2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(2, 200px);
+      grid-gap: 25px;
+      justify-content: center;
+      padding: 40px 0 40px;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.6);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      color: black;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      text-align: center;    /* centraliza textos */
+      padding: 20px 0 20px;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 50%;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin: 10px 0 15px 0;
+    }
+
+    @media (max-width: 500px) {
+      .cards-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+nav{
+    display: flex;
+    align-self: center;
+    padding: 10px;
+}
+li{
+  margin: 10px;
+    list-style: none;
+    padding: 10px;
+    font-family: 'lucinda',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.cabecalho{
+    background-color:#050000;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+    height: 100px;
+}
+.cabecalho-menu{
+    display:flex;
+    gap:16px;
+}
+.cabecalho-menu-item{
+   font-family:'sarala',sans-serif;
+   font-weight:400;
+    font-size:18px;
+    color:#eeebeb;
+    
+}
+option{
+    font-family:'sarala',sans-serif;
+   font-weight:400;
+    font-size:18px;
+    color:#f7f3f3;
+    background-color:#00040a;
+}
+
+
+ .btninscrever{
+      display:flex;
+      padding: 5px 10px 5px;
+      font-size: 18px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      flex-direction:row;
+      overflow: hidden;
+      align-self: right;
+      
+
+ }
+ .btninscrever:hover{
+    background: white;
+    color: black;
+ }
+
+    /* Fundo escuro do modal */
+    .modal {
+      display: none; /* escondido por padrão */
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0,0,0,0.6);
+    }
+
+    /* Caixa do formulário */
+    .modal-content {
+      background: white;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+    }
+
+    .close {
+      float: right;
+      font-size: 22px;
+      cursor: pointer;
+      color: red;
+    }
+
+    .modal label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .submit-btn {
+      background: rgb(116, 24, 2);
+      color: white;
+      padding: 20px;
+      border: none;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: darkgreen;
+    }

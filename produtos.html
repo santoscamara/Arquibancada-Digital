@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css"> 
+        <link rel="stylesheet" href="css/produtos.css">
         <title>Arquibancada Digital - Produtos</title>
     </head>
         <body>
@@ -26,7 +26,7 @@
           </section>
              
      
-  
+
 <div class="container-carrosel"> 
 <div class="produtos-carrossel" id="carrossel1">
     <button class="seta1 esquerda" onclick="scrollEsquerda1()">&#10094;</button>
@@ -58,7 +58,6 @@
           <div class="box-imagem">
             <img src="imagem-produto/Camisa 2 Flamengo.png" alt="Camisa 2 do Flamengo" class="imagem-produto">
           </div>
-
           <div class="box-texto">
                 <h4>Camisa 2 Flamengo 2025</h4>
                 <p>R$229.99</p>
@@ -302,6 +301,7 @@
 </div>
 
 <div class="container-carrosel">
+  
 <div class="produtos-carrossel" id="carrossel2">
           <button class="seta2 esquerda" onclick="scrollEsquerda2()">&#10094;</button>
           <button class="seta2 direita" onclick="scrollDireita2()">&#10095;</button>
@@ -860,84 +860,6 @@
 
 </div>
 </div>
-
-
-<script>
-function scrollEsquerda1() {
-    const wrapper = document.querySelector("#carrossel1 .produtos-wrapper");
-    wrapper.scrollLeft -= 376;
-    
-}
-
-function scrollDireita1() {
-    const wrapper = document.querySelector("#carrossel1 .produtos-wrapper");
-    wrapper.scrollLeft += 376;
-    
-}
-
-function scrollEsquerda2() {
-    const wrapper = document.querySelector("#carrossel2 .produtos-wrapper");
-    wrapper.scrollLeft -= 376;
-    
-}
-
-function scrollDireita2() {
-    const wrapper = document.querySelector("#carrossel2 .produtos-wrapper");
-    wrapper.scrollLeft += 376;
-    
-}
-
-function scrollEsquerda3() {
-    const wrapper = document.querySelector("#carrossel3 .produtos-wrapper");
-    wrapper.scrollLeft -= 376;
-    
-}
-
-function scrollDireita3() {
-    const wrapper = document.querySelector("#carrossel3 .produtos-wrapper");
-    wrapper.scrollLeft += 376;
-    
-}
-
-function scrollEsquerda4() {
-    const wrapper = document.querySelector("#carrossel4 .produtos-wrapper");
-    wrapper.scrollLeft -= 376;
-    
-}
-
-function scrollDireita4() {
-    const wrapper = document.querySelector("#carrossel4 .produtos-wrapper");
-    wrapper.scrollLeft += 376;
-    
-}
-
-function filtrarProdutosPorCheckbox(carrosselId) {
-  const carrossel = document.getElementById(carrosselId);
-  const produtos = carrossel.querySelectorAll('.produto-detalhes');
-
-  // Pega todos os checkboxes selecionados
-  const checkboxes = document.querySelectorAll('input[name="time"]:checked');
-  const timesSelecionados = Array.from(checkboxes).map(cb => cb.value);
-
-  produtos.forEach(produto => {
-    // Se nenhum filtro estiver selecionado, mostra todos
-    if(timesSelecionados.length === 0) {
-      produto.style.display = 'block';
-    } else {
-      // Mostra o produto se o time dele estiver selecionado
-      produto.style.display = timesSelecionados.includes(produto.dataset.time) ? 'block' : 'none';
-    }
-  });
-}
-
-// Adiciona evento aos checkboxes para filtrar quando mudarem
-const checkboxes = document.querySelectorAll('input[name="time"]');
-checkboxes.forEach(cb => {
-  cb.addEventListener('change', () => filtrarProdutosPorCheckbox('carrossel1'));
-  cb.addEventListener('change', () => filtrarProdutosPorCheckbox('carrossel2'));
-  cb.addEventListener('change', () => filtrarProdutosPorCheckbox('carrossel3'));
-  cb.addEventListener('change', () => filtrarProdutosPorCheckbox('carrossel4'));
-});
-</script>
+<script src="scriptprodutos.js"></script>
   </body>
 </html>

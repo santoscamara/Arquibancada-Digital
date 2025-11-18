@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="tudo sobre o nosso time do coração,aqui encontrará informações exclusivas.">
         <title>Arquibancada Digital</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
    
@@ -20,10 +20,8 @@
             <nav class="cabecalho-menu">
                 <a class="cabecalho-menu-item" href="#container">Início</a>
                 <a class="cabecalho-menu-item" href="produtos.html">Produtos</a>
-                <a class="cabecalho-menu-item" href="historia.html">Hinos</a>
+                <a class="cabecalho-menu-item" href="historia.html">História</a>
                 <a class="cabecalho-menu-item" href="">Sobre nós</a>
-
-                
             </nav>
             
 <button onclick="abrirFormulario()" class="btninscrever">Inscreva-se</button>
@@ -70,6 +68,9 @@
                 <nav>
                     <a href="produtos.html">
                         <button class="btn">Produtos</button>
+                    </a>
+                    <a href="historia/fluminense.html">
+                        <button class="btn">História</button>
                     </a>
                    
                 </nav>
@@ -132,17 +133,16 @@ Gol: Willian José (44’1ºT). <br>
                     </ul>
                 </section>
             </div>
-
             <div>
                 <header class="cabeçalho-container">
                     <img src="vasco.png">
                 </header>
                 <nav>
-                    <a href="index.html">
-                        <button>Produtos &nbsp;</button>
+                    <a href="produtos.html">
+                        <button class="btn">Produtos</button>
                     </a>
-                    <a href="historia.html">
-                        <button>Historia</button>
+                    <a href="historia/vasco.html">
+                        <button class="btn">Historia</button>
                     </a>
                 </nav>
                 <section id="card">
@@ -196,11 +196,11 @@ Gol: Willian José (44’1ºT). <br>
                     <img src="fluminense.png">
                 </header>
                 <nav>
-                    <a href="index.html">
-                        <button>Produtos &nbsp;</button>
+                    <a href="produtos.html">
+                        <button class="btn">Produtos</button>
                     </a>
-                    <a href="historia.html">
-                        <button>Historia</button>
+                    <a href="/historia/fluminense.html">
+                        <button class="btn">Historia</button>
                     </a>
                 </nav>
                 <section id="card">
@@ -222,11 +222,11 @@ Gol: Willian José (44’1ºT). <br>
                     <img src="botafogo.png">
                 </header>
                 <nav>
-                    <a href="index.html">
-                        <button>Produtos &nbsp;</button>
+                    <a href="produtos.html">
+                        <button class="btn">Produtos</button>
                     </a>
-                    <a href="historia.html">
-                        <button>Historia</button>
+                    <a href="/historia/botafogo.html">
+                        <button class="btn">Historia</button>
                     </a>
                 </nav>
                 <section id="card">
@@ -244,36 +244,7 @@ Gol: Willian José (44’1ºT). <br>
                 </section>
             </div>
         </div>
-    <script>
-    // Função para abrir o formulário
-    function abrirFormulario() {
-      document.getElementById('formModal').style.display = 'block';
-    }
-
-    // Função para fechar o formulário
-    function fecharFormulario() {
-      document.getElementById('formModal').style.display = 'none';
-    }
-
-    // Função para redirecionar com base na seleção do time
-    function redirecionar(event) {
-      event.preventDefault(); // Evita o envio do formulário
-      const timeSelecionado = document.getElementById('time').value;
-      if (timeSelecionado) {
-        window.location.href = timeSelecionado; // Redireciona para a URL do time selecionado
-      }
-    }
-
-    // Fecha o modal se o usuário clicar fora dele
-    window.onclick = function(event) {
-      const modal = document.getElementById('formModal');
-      if (event.target == modal) {
-        modal.style.display = 'none';
-      }
-    }
-
-
-  </script>
+<script src="scriptindex.js"></script>
        
     <!--Rodapé-->
 </body>

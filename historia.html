@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 
-  <link rel="stylesheet" href="historia.css"/>
+  <link rel="stylesheet" href="css/historia.css"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arquibancada digital</title>
@@ -14,14 +14,13 @@
             <nav class="cabecalho-menu">
                 <a class="cabecalho-menu-item" href="index.html">Início</a>
                 <a class="cabecalho-menu-item" href="produtos.html">Produtos</a>
-                <a class="cabecalho-menu-item" href="historia/HTML/historia.html">Hinos</a>
+                <a class="cabecalho-menu-item" href="historia.html">História</a>
                 <a class="cabecalho-menu-item" href="">Sobre nós</a>
             </nav>
             
 <button onclick="abrirFormulario()" class="btninscrever">Inscreva-se</button>         
   <!-- Modal do formulário -->
   <div id="formModal" class="modal">
-    <button onclick="abrirFormulario()">Inscreva-se</button>
     <div class="modal-content">
       <span class="close" onclick="fecharFormulario()">&times;</span>
       
@@ -51,7 +50,7 @@
   <div class="cards-container">
 
     <div class="card">
-     <a href="fluminense.html" class="img-click">
+     <a href="historia/fluminense.html" class="img-click">
       <img src="fluminense.png" alt="Fluminense">
       </a>
       <h2>Fluminense</h2>
@@ -72,42 +71,14 @@
     </div>
 
     <div class="card">
-    <a href="botafogo.html">
+    <a href="historia/botafogo.html">
       <img src="botafogo.png" alt="Botafogo">
     </a>
      <h2>Botafogo</h2>
     </div>
 
   </div>
-     <script>
-    // Função para abrir o formulário
-    function abrirFormulario() {
-      document.getElementById('formModal').style.display = 'block';
-    }
-
-    // Função para fechar o formulário
-    function fecharFormulario() {
-      document.getElementById('formModal').style.display = 'none';
-    }
-
-    // Função para redirecionar com base na seleção do time
-    function redirecionar(event) {
-      event.preventDefault(); // Evita o envio do formulário
-      const timeSelecionado = document.getElementById('time').value;
-      if (timeSelecionado) {
-        window.location.href = timeSelecionado; // Redireciona para a URL do time selecionado
-      }
-    }
-
-    // Fecha o modal se o usuário clicar fora dele
-    window.onclick = function(event) {
-      const modal = document.getElementById('formModal');
-      if (event.target == modal) {
-        modal.style.display = 'none';
-      }
-    }
-
-
+     <script src="scriptindex.js">
   </script>
 
 </body>
