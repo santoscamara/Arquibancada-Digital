@@ -29,8 +29,8 @@
       grid-gap: 25px;
       justify-content: center;
       padding: 40px 0 40px;
-      margin: auto;
-      margin-top: 50px;
+      margin: 50px;
+    
     }
 
     .card {
@@ -109,7 +109,7 @@ option{
 
  .btninscrever{
       display:flex;
-      padding: 5px 10px 5px;
+      padding: 5px 5px 5px;
       font-size: 18px;
       background: black;
       color: white;

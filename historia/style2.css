@@ -90,9 +90,7 @@ body {
 }
 
 /* Botão do accordion */
-.accordion-button {
-
-  
+.accordion-button {  
   font-weight: 600;
   padding: 18px;
   border: none;
@@ -100,7 +98,7 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-  background: var(--accent);
+  background: black;
   color: white;
   box-shadow: inset 0 0 20px rgba(0,0,0,.35);
 }
