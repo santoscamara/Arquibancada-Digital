@@ -32,11 +32,17 @@ li{
 .cabecalho{
     background-color:#050000;
     display:flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items:center;
-    justify-content:center;
-    padding:0;
+    justify-content:space-between;
     height: 100px;
+}
+
+.titulo{
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
 }
 .cabecalho-menu{
     display:flex;

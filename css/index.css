@@ -23,10 +23,9 @@ body{
     align-content: center;
 }
 .titulo{
-  text-align: center;
   color: white;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .cabeçalho-container img{
     display: flex;
@@ -106,9 +105,9 @@ li{
 .cabecalho{
     background-color:#050000;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items:center;
-    justify-content:center;
+    justify-content:space-between;
     padding:0;
     height: 100px;
 }
